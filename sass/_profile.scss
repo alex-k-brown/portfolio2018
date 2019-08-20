@@ -1,0 +1,24 @@
+// Profile Styling
+
+.profile {
+
+	.portrait,
+	.text {
+		display: inline-block;
+	}
+	.portrait {
+		width: 32vw;
+	    height: 32vw;
+	    background-image: url('../resources/images/me.jpg');
+	    background-size: cover;
+	}
+	.text {
+		width: 52vw;
+    	margin: 0 0 0 5vw;
+    	padding: 2.5vw 0 0;
+	}
+	.location,
+	.years {
+		margin: 0 0 1vw 0;
+	}
+}

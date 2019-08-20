@@ -66,3 +66,336 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 3, ../sass/_general.scss */
+.portfolio-container {
+  width: 100%;
+}
+/* line 5, ../sass/_general.scss */
+.portfolio-container * {
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Assistant, sans-serif;
+  font-weight: 200;
+  color: #484848;
+  font-size: 2.5vw;
+  line-height: 3.3vw;
+  vertical-align: top;
+}
+/* line 17, ../sass/_general.scss */
+.portfolio-container header,
+.portfolio-container footer,
+.portfolio-container section {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+/* line 24, ../sass/_general.scss */
+.portfolio-container .bold {
+  font-weight: 600;
+}
+/* line 27, ../sass/_general.scss */
+.portfolio-container .title {
+  font-family: 'Megrim', sans-serif;
+  color: #395a7c;
+  font-size: 5vw;
+  margin: 0 0 5vw 0;
+}
+/* line 33, ../sass/_general.scss */
+.portfolio-container section {
+  padding: 5vw 5vw;
+}
+/* line 36, ../sass/_general.scss */
+.portfolio-container a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 3, ../sass/_header.scss */
+.header {
+  padding: 10vw 0 5vw;
+}
+/* line 5, ../sass/_header.scss */
+.header * {
+  text-align: center;
+}
+/* line 8, ../sass/_header.scss */
+.header .name,
+.header .title {
+  line-height: initial;
+}
+/* line 12, ../sass/_header.scss */
+.header .name {
+  font-family: 'Megrim', sans-serif;
+  font-size: 13vw;
+  color: #395a7c;
+}
+/* line 17, ../sass/_header.scss */
+.header .title {
+  font-size: 5vw;
+  font-family: Assistant, sans-serif;
+  margin: 0;
+  color: #484848;
+  font-weight: 400;
+}
+
+/* line 5, ../sass/_profile.scss */
+.profile .portrait,
+.profile .text {
+  display: inline-block;
+}
+/* line 9, ../sass/_profile.scss */
+.profile .portrait {
+  width: 32vw;
+  height: 32vw;
+  background-image: url("../resources/images/me.jpg");
+  background-size: cover;
+}
+/* line 15, ../sass/_profile.scss */
+.profile .text {
+  width: 52vw;
+  margin: 0 0 0 5vw;
+  padding: 2.5vw 0 0;
+}
+/* line 20, ../sass/_profile.scss */
+.profile .location,
+.profile .years {
+  margin: 0 0 1vw 0;
+}
+
+/* line 4, ../sass/_experience.scss */
+.experience .job {
+  width: 42.5vw;
+  height: 42.5vw;
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 10, ../sass/_experience.scss */
+.experience .job * {
+  color: black;
+}
+/* line 14, ../sass/_experience.scss */
+.experience .job .company {
+  position: absolute;
+  background-image: url(../resources/images/lift-black.png);
+  width: 42.5vw;
+  height: 43vw;
+  top: 0;
+  background-size: 60%;
+  background-position: 50% 24%;
+}
+/* line 22, ../sass/_experience.scss */
+.experience .job .company .video-mask {
+  display: none;
+}
+/* line 26, ../sass/_experience.scss */
+.experience .job .role {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  width: 37vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 23vw;
+}
+/* line 34, ../sass/_experience.scss */
+.experience .job .position {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 16vw;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+/* line 42, ../sass/_experience.scss */
+.experience .job:nth-child(1) {
+  margin: 0 4vw 0 0;
+}
+/* line 45, ../sass/_experience.scss */
+.experience .job:nth-child(1) * {
+  color: white;
+}
+/* line 49, ../sass/_experience.scss */
+.experience .job:nth-child(1) .video-mask {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 52, ../sass/_experience.scss */
+.experience .job:nth-child(1) .company {
+  background-image: url(../resources/images/quartz.png);
+  width: 32vw;
+  left: 5vw;
+  top: 9vw;
+  height: 5vw;
+  background-size: cover;
+  background-position: center;
+}
+/* line 62, ../sass/_experience.scss */
+.experience .job video {
+  height: 42.5vw;
+  transform: translateX(-25%);
+}
+/* line 66, ../sass/_experience.scss */
+.experience .job .video-mask {
+  width: 42.5vw;
+  height: 43vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 13vw;
+}
+/* line 73, ../sass/_experience.scss */
+.experience .job .video-mask * {
+  position: absolute;
+}
+
+/* line 4, ../sass/_education.scss */
+.education .schools,
+.education .school {
+  width: 100%;
+}
+/* line 8, ../sass/_education.scss */
+.education .schools {
+  height: 21vw;
+}
+/* line 11, ../sass/_education.scss */
+.education .school {
+  display: block;
+  width: 90vw;
+  height: 10vw;
+  margin: 0 0 2vw 0;
+  overflow: hidden;
+  position: absolute;
+  		/*&:hover {
+  			.school-image {
+  	    		background-size: 250%;
+  	    		background-position: 11% 50%;
+  	    	}
+      	}*/
+}
+/* line 19, ../sass/_education.scss */
+.education .school .school-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(../resources/images/cougar.png);
+  background-size: 169%;
+  background-position: 9.5% 50%;
+  opacity: 1;
+  opacity: .7;
+  position: absolute;
+  /*top: 0;
+  left: 0;
+  top: 10vw;*/
+}
+/* line 32, ../sass/_education.scss */
+.education .school video {
+  width: 100%;
+  position: absolute;
+  top: -16vw;
+}
+/* line 38, ../sass/_education.scss */
+.education .school * {
+  color: white;
+}
+/* line 48, ../sass/_education.scss */
+.education .school-copy {
+  width: 100%;
+  height: 100%;
+  padding: 3.5vw 0 0 27.5vw;
+  position: absolute;
+}
+/* line 57, ../sass/_education.scss */
+.education .school-1 {
+  top: 26vw;
+    	/*&:hover {
+    		.school-image {
+	    		background-size: 383%;
+	    		background-position: 90.8% 46.5%;
+	    	}
+    	}*/
+}
+/* line 60, ../sass/_education.scss */
+.education .school-1 .school-image {
+  background-image: url("../resources/images/v-green.png");
+  background-size: 204%;
+  background-position: 91.5% 48%;
+}
+/* line 66, ../sass/_education.scss */
+.education .school-1 video {
+  top: -14vw;
+}
+/* line 69, ../sass/_education.scss */
+.education .school-1 .school-copy {
+  padding: 3.5vw 33vw 0 0;
+  text-align: right;
+}
+/* line 81, ../sass/_education.scss */
+.education .name, .education .degree {
+  display: inline-block;
+}
+/* line 84, ../sass/_education.scss */
+.education .name {
+  font-weight: 600;
+}
+/* line 87, ../sass/_education.scss */
+.education .location {
+  display: none;
+}
+
+/* line 4, ../sass/_portfolio.scss */
+.portfolio .project {
+  position: relative;
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  background-color: black;
+  margin: 1vw;
+}
+/* line 12, ../sass/_portfolio.scss */
+.portfolio .vid-container {
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  position: absolute;
+}
+/* line 18, ../sass/_portfolio.scss */
+.portfolio video {
+  height: 20vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 25, ../sass/_portfolio.scss */
+.portfolio .project .title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 2vw;
+  color: white;
+  font-family: 'Assistant', sans-serif;
+}
+/* line 38, ../sass/_portfolio.scss */
+.portfolio .project-0 .title {
+  background-image: url("../resources/images/deloitte.jpg");
+}
+
+/* line 3, ../sass/_bg.scss */
+.bg {
+  position: fixed;
+}
+
+/*.bg {
+	width: 100vw;
+	height: 100vw;
+	position: fixed;
+	overflow: hidden;
+}
+.bg-strip {
+	position: relative;
+	display: inline-block;
+	width: 5vw;
+	height: 1000vh;
+	background: linear-gradient(black, white);
+}*/

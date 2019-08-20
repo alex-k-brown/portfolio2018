@@ -1,0 +1,40 @@
+// General Styling
+
+.portfolio-container {
+	width: 100%;
+	* {
+		box-sizing: border-box;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		font-family: Assistant, sans-serif;
+		font-weight: 200;
+		color: $charcoal;
+		font-size: 2.5vw;
+    	line-height: 3.3vw;
+    	vertical-align: top;
+	}
+	header,
+	footer,
+	section {
+		width: 100%;
+		position: relative;
+		display: block;
+	}
+	.bold {
+		font-weight: 600;
+	}
+	.title {
+		font-family: 'Megrim', sans-serif;
+		color: $blueGray;
+		font-size: 5vw;
+		margin: 0 0 5vw 0;
+	}
+	section {
+		padding: 5vw 5vw;
+	}
+	a {
+		cursor: pointer;
+		text-decoration: none;
+	}
+}

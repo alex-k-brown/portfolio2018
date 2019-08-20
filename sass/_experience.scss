@@ -1,0 +1,78 @@
+// Experience Styling
+
+.experience {
+	.job {
+		width: 42.5vw;
+		height: 42.5vw;
+		display: inline-block;
+		overflow: hidden;
+
+		* {
+			color: black;
+		}
+
+		.company {
+			position: absolute;
+		    background-image: url(../resources/images/lift-black.png);
+		    width: 42.5vw;
+		    height: 43vw;
+		    top: 0;
+		    background-size: 60%;
+		    background-position: 50% 24%;
+		    .video-mask {
+		    	display: none;
+		    }
+		}
+		.role {
+			font-size: 1.5vw;
+			line-height: 2vw;
+			width: 37vw;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 23vw;
+		}
+		.position {
+			left: 50%;
+			transform: translateX(-50%);
+			top: 16vw;
+			width: 100%;
+			text-align: center;
+			font-weight: 600;
+		}
+		&:nth-child(1) {
+			margin: 0 4vw 0 0;
+
+			* {
+				color: white;
+			}
+
+			.video-mask {
+				background-color: rgba(0,0,0,.5);
+			}
+			.company {
+				background-image: url(../resources/images/quartz.png);
+			    width: 32vw;
+			    left: 5vw;
+			    top: 9vw;
+			    height: 5vw;
+			    background-size: cover;
+			    background-position: center;
+			}
+		}
+		video {
+			height: 42.5vw;
+			transform: translateX(-25%);
+		}
+		.video-mask {
+			width: 42.5vw;
+			height: 43vw;
+			background-color: rgba(255,255,255,.7);
+			position: absolute;
+			top: 13vw;
+
+			* {
+				position: absolute;
+			}
+		}
+	}
+}
